@@ -42,7 +42,7 @@ function handle_time_shortcode( $attr, $content = '' ) {
 
 	// Build the link and abbr microformat.
 	$out = sprintf(
-		'<time datetime="%s">%s</a>',
+		'<time datetime="%s">%s</time>',
 		gmdate( 'c', $time ),
 		$content
 	);
