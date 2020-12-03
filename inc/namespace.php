@@ -50,3 +50,19 @@ function handle_time_shortcode( $attr, $content = '' ) {
 	// Return the new link.
 	return $out;
 }
+
+/**
+ * Remove [time] from the list of shortcodes which get stripped in excerpts.
+ * This allows the original time (as entered) to appear when embedded in Slack.
+ *
+ * @param string[] $tags_to_remove Array of shortcode names to remove.
+ * @return string[] Filtered array.
+ */
+function do_not_strip_time_shortcode( array $tags_to_remove ) : array {
+	return array_filter(
+		$tags_to_remove,
+		function( $shortcode ) {
+			return $shortcode !== 'time';
+		}
+	);
+}
