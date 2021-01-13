@@ -61,7 +61,7 @@ function handle_time_shortcode( $attr, $content = '' ) {
 function do_not_strip_time_shortcode( array $tags_to_remove ) : array {
 	return array_filter(
 		$tags_to_remove,
-		function( $shortcode ) {
+		function ( $shortcode ) {
 			return $shortcode !== 'time';
 		}
 	);
