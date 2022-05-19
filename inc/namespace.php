@@ -12,10 +12,7 @@ function register_shortcode() {
 /**
  * Builds the time shortcode output.
  *
- * This implements the functionality of the Gallery Shortcode for displaying
- * WordPress images on a post.
- *
- * @param array $attr Attributes of the gallery shortcode.
+ * @param array $attr Attributes of the time shortcode.
  * @param string $content Shortcode content.
  * @return string HTML content to display time.
  */
