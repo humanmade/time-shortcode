@@ -1,4 +1,7 @@
 <?php
+/**
+ * Implement [time] shortcode.
+ */
 
 namespace HM\TimeShortcode;
 

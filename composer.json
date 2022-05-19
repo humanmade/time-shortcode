@@ -10,7 +10,7 @@
         "humanmade/coding-standards": "^1.1.0"
     },
     "scripts": {
-        "lint": "phpcs ."
+        "lint": "phpcs .  --standard=vendor/humanmade/coding-standards"
     },
     "config": {
         "allow-plugins": {
